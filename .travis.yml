@@ -1,0 +1,11 @@
+language : python
+version:
+      - "3.8"
+
+services:
+      - virtualenv
+
+before_script: pip install virtualenv
+
+script: 
+      - python manage.py test
